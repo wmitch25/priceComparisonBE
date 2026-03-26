@@ -3,7 +3,7 @@ import cors from "cors";
 import searchRoutes from "./routes/searchRoutes.js";
 
 const app = express();
-
+console.log("hi")
 app.use(cors());
 app.use(express.json());
 

@@ -9,7 +9,6 @@ import { fetchShoppingResults } from "../services/serpService.js";
  */
 export async function searchProducts(req, res) {
   try {
-    console.log("searchProducts", req.query);
     const query = (req.query.q || "").trim();
     if (!query) {
       return res.status(400).json({

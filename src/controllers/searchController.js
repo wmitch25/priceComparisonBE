@@ -8,6 +8,7 @@ import { fetchShoppingResults } from "../services/serpService.js";
  * - product history: log or store search results for history view
  */
 export async function searchProducts(req, res) {
+  console.log("searchProducts");
   try {
     const query = (req.query.q || "").trim();
     if (!query) {
